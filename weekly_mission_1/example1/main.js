@@ -17,8 +17,8 @@ const myModule = (() => {
 
     // Variable para guardar las variables locales
     const exported = {
-    publicFoo: "Valor público, pueden verme desde donde me llamen",
-    publicBar: "Otro valor público",
+        publicFoo: "Valor público, pueden verme desde donde me llamen",
+        publicBar: "Otro valor público",
         publicBaz: baz
     }
 
