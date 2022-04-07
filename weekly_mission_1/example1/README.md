@@ -6,9 +6,9 @@
 
     ```javascript
     let myCar = {
-    make: 'Ford',
-    model: 'Mustang',
-    year: 1969
+        make: 'Ford',
+        model: 'Mustang',
+        year: 1969
     };
     ```
     El código anterior es otra forma de escribir el código que se encuentra en el archivo `main.js` para esta parte.
