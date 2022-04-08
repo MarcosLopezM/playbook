@@ -1,4 +1,4 @@
-# Interpretación del ejemplo 3
+# Interpretación del ejemplo 3: Diferentes formas de exportar funciones
 
 En el archivo `logger_1.js` se define un módulo que exporta un solo objeto, es por eso que se usa `module.exports`, ya que no se requiere de un objeto lleno de funciones.
 
