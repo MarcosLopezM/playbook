@@ -1,4 +1,4 @@
-# Interpretación del ejemplo 2
+# Interpretación del ejemplo 2: Exportando funciones entre scripts con CommonJS
 
 Notemos que hay una nueva función con el nombre `require` que nos permite importar un módulo. Esto nos permite importar el módulo `logger.js` y utilizarlo en el archivo `main.js`.
 
