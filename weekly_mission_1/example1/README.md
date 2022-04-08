@@ -1,4 +1,4 @@
-# Interpretación del ejemplo 1
+# Interpretación del ejemplo 1: Objetos de JS
 
 1. Creación de un objeto con propiedades
 
