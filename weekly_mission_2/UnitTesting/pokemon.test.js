@@ -1,22 +1,6 @@
-/*
-Este ejemplo incluye dependencias. En tu línea de comando ve a este proyecto y ejecuta el comando `npm install` para descargar las dependencias, esto creará una carpeta node_modules
-*/
-export default class Pokemon {
-    constructor(name, type, age){
-        this.name = name
-        this.type = type
-        this.age = age
-        this.attacks = []
-    }
+import Pokemon from './pokemon'
 
-    get getAttacks(){
-        return this.attacks
-    }
-
-    set setAttacks(attacks){
-        return this.attacks = attacks
-    }
-}
-
-const myPokemon = new Pokemon("Charmander", "Fuego", 10)
-console.log(myPokemon)
+test('1) Create a new object pokemon', () => {
+    const myPokemon = new Pokemon('Pikachu')
+    expect(myPokemon.name).toBe('Pikachu'); // Corrige esta prueba
+});
