@@ -80,5 +80,36 @@ console.log(facebookFriends.getPeopleYouMayKnow());
 console.log("--------------------");
 
 const facebookProfile = {
+    username: "Marcos",
+    friends: 222,
+    socialMedia: {
+        instagram: "marcos",
+        pinterest: "marcos",
+        tumblr: "marcos"
+    },
+    aboutInfo: {
+        work: "developer",
+        education: {
+            middleSchool: "middleSchool",
+            highSchool: "highSchool",
+            college: "college"
+        },
+        location: "Mexico",
+        basicInfo: {
+            gender: "Male",
+            birthday: "15/04/2022",
+            languages: ["spanish", "english"]
+        }
+    },
 
+    getGeneralInfo: function () {
+        return `${this.username} has ${this.friends} friends and he's a ${this.aboutInfo.work} based in ${this.aboutInfo.location}.`;
+    },
+    getEducationInfo: function () {
+        return `He studied at ${this.aboutInfo.education.middleSchool} and ${this.aboutInfo.education.highSchool}, and he's currently at ${this.aboutInfo.education.college}.`;
+    }
 }
+
+console.log(`${facebookProfile.username} speaks ${facebookProfile.aboutInfo.basicInfo.languages[0]} and ${facebookProfile.aboutInfo.basicInfo.languages[1]}.`);
+console.log(facebookProfile.getGeneralInfo());
+console.log(facebookProfile.getEducationInfo());
