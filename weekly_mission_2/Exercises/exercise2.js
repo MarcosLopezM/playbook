@@ -62,7 +62,7 @@ const explorers = [
 ]
 
 /*
-    Ejercicio 3.1: Imprime el nombre (propiedad name) de cada
+    Ejercicio 2.1: Imprime el nombre (propiedad name) de cada
     explorer en la lista.
     Usa forEach.
 */
@@ -74,7 +74,7 @@ explorers.forEach(function(explorer) {
 console.log("---------------------------------");
 
 /*
-    Ejercicio 3.2: Imprime el stack de cada explorer.
+    Ejercicio 2.2: Imprime el stack de cada explorer.
     Usa forEach.
 */
 
@@ -85,7 +85,7 @@ explorers.forEach(function(explorer) {
 console.log("---------------------------------");
 
 /*
-    Ejercicio 3.3: Crea una nueva lista con las listas
+    Ejercicio 2.3: Crea una nueva lista con las listas
     de stacks de cada explorer.
     Usa map.
 */
@@ -98,7 +98,7 @@ console.log(listOfStacks);
 console.log("---------------------------------");
 
 /*
-    Ejercicio 3.4: Obtén la lista de explorers que
+    Ejercicio 2.4: Obtén la lista de explorers que
     tengan en "js".
     Usa filter (para validar un elemento en una lista
         se usa el método includes).
