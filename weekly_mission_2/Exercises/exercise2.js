@@ -111,3 +111,56 @@ explorers.filter(function(explorer) {
     }
 })
 console.log("---------------------------------");
+
+/*
+    Ejercicio 2.5: Busca el primer explorer que
+    sea de la CDMX.
+    Usa find.
+*/
+
+console.log("First explorer from CDMX");
+explorers.find(function(explorer) {
+    if (explorer.city === "CDMX") {
+        console.log(explorer.name);
+    }
+})
+
+console.log("---------------------------------");
+
+/**
+    Ejercicio 2.6: Obtén la suma de todos los exerciseCompleted.
+    Usa reduce.
+*/
+
+const totalExerciseCompleted = explorers.reduce(
+    (acc, explorer) => acc + explorer.exerciseCompleted, 0
+)
+
+console.log(`The total number of exercises completed is ${totalExerciseCompleted}`);
+console.log("---------------------------------");
+
+/*
+    Ejercicio 2.7: Obtén la validación si al menos uno
+    de los explorers tiene la propiedad exerciseFinished en
+    frontEnd como true.
+    Usa some.
+*/
+
+const atLeastOneExercisesCompleted = explorers.some(function(explorer) {
+    return explorer.missions.frontEnd.exerciseFinished === true;
+})
+
+console.log(`At least one explorer completed the FrontEnd exercises: ${atLeastOneExercisesCompleted}`);
+console.log("---------------------------------");
+
+/*
+    Ejercicio 2.8: Obtén la validación si todos los explorers tienen
+    la propiedad isFinished del onboarding como true.
+    Usa every.S
+*/
+
+const allExercisesCompleted = explorers.every(function(explorer) {
+    return explorer.missions.onboarding.isFinished === true;
+})
+
+console.log(`All the explorers completed the Onboarding exercises: ${allExercisesCompleted}`);
