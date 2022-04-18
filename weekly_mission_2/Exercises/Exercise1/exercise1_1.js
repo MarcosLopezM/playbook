@@ -4,49 +4,39 @@
 
 console.log("Modelando Twitter con objetos");
 
-const twitter = {
+const twitterUser = {
+    name: "Marcos",
+    username: "@lmmarcosml",
+    bio: "FullStack Developer",
+    location: "México",
+    following: 500,
+    followers: 1000,
 
-    user: {
-        name: "Marcos López",
-        username: "@lmmarcosml",
-        bio: "FullStack Developer",
-        location: "México",
-        birthday: "10/10/1990",
-        following: "122",
-        followers: "1"
+    getUserInfo: function () {
+        return `This is ${this.name}'s profile with username: ${this.username}`;
     },
-
-    trendingTopics:{
-        sports: {
-            sports1: "Stokes"
-        },
-        entertainment: {
-            entertainment1: "Aespa"
-        },
-        news: {
-            news1: "Channel"
-        }
-    },
-
-    hashtags: {
-        hashtag1: "#JoseRamonLopezBeltran60",
-        hashtag2: "#selfiesforchan",
-        hashtag3: "#JuevesSanto"
-    },
-
-    getGeneralInfo: function () {
-        return `This is ${this.user.name}'s profile with username: ${this.user.username}`;
-    },
-
-    getTrendingTopics: function () {
-        return `This are some trending topics in Twitter: ${this.trendingTopics.sports.sports1}, ${this.trendingTopics.entertainment.entertainment1}, ${this.trendingTopics.news.news1}.`; 
-    },
-
-    getHashtags: function () {
-        return `This are some trending hashtags: ${this.hashtags.hashtag1}, ${this.hashtags.hashtag2}, ${this.hashtags.hashtag3}.`;
+    getFollowers: function () {
+        return `${this.username} has ${this.followers} followers.`;
     }
 }
 
-console.log(twitter.getGeneralInfo());
-console.log(twitter.getTrendingTopics());
-console.log(twitter.getHashtags());
+console.log(`${twitterUser.name} is from ${twitterUser.location}.`);
+console.log(twitterUser.getUserInfo());
+console.log(twitterUser.getFollowers());
+console.log("--------------------");
+
+const twitterExplore = {
+    hashtags: ["#TheFirstLady", "#Edomex", "#OurBluesJiminOST"],
+    trendingTopics: ["Litio", "Corea", "Cádiz"],
+
+    getHashtags: function () {
+        return `${this.hashtags[0]} and ${this.hashtags[1]} are trending topics.`;
+    },
+    getTrendingTopics: function () {
+        return `${this.trendingTopics[0]} and ${this.trendingTopics[1]} are trending topics.`;
+    }
+}
+
+console.log(`${twitterExplore.hashtags[1]} is trending.`);
+console.log(twitterExplore.getHashtags());
+console.log(twitterExplore.getTrendingTopics());
