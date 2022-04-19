@@ -81,35 +81,24 @@ console.log("--------------------");
 
 const facebookProfile = {
     username: "Marcos",
-    friends: 222,
+    friends: 500,
+    work: "Student and programmer",
+    age: 22,
     socialMedia: {
         instagram: "marcos",
         pinterest: "marcos",
         tumblr: "marcos"
     },
-    aboutInfo: {
-        work: "developer",
-        education: {
-            middleSchool: "middleSchool",
-            highSchool: "highSchool",
-            college: "college"
-        },
-        location: "Mexico",
-        basicInfo: {
-            gender: "Male",
-            birthday: "15/04/2022",
-            languages: ["spanish", "english"]
-        }
-    },
+    location: "Mexico",
 
     getGeneralInfo: function () {
-        return `${this.username} has ${this.friends} friends and he's a ${this.aboutInfo.work} based in ${this.aboutInfo.location}.`;
+        return `${this.username} has ${this.friends} friends and he's a ${this.work} based in ${this.location}.`;
     },
-    getEducationInfo: function () {
-        return `He studied at ${this.aboutInfo.education.middleSchool} and ${this.aboutInfo.education.highSchool}, and he's currently at ${this.aboutInfo.education.college}.`;
+    getSocialMedia: function () {
+        return `${this.username} can be found on  ${this.socialMedia.instagram} on Instagram, ${this.socialMedia.pinterest} on Pinterest and ${this.socialMedia.tumblr} on Tumblr.`;
     }
 }
 
-console.log(`${facebookProfile.username} speaks ${facebookProfile.aboutInfo.basicInfo.languages[0]} and ${facebookProfile.aboutInfo.basicInfo.languages[1]}.`);
+console.log(`${facebookProfile.username} is ${facebookProfile.age} years old.`);
 console.log(facebookProfile.getGeneralInfo());
-console.log(facebookProfile.getEducationInfo());
+console.log(facebookProfile.getSocialMedia());
